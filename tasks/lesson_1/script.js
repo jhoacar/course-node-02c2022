@@ -13,6 +13,14 @@ const init = function() {
     const multi3 = document.getElementById('multiplier_3');
     const multi4 = document.getElementById('multiplier_4');
 
+    const res1 = document.getElementById('response_1');
+    const res2 = document.getElementById('response_2');
+    const res3 = document.getElementById('response_3');
+    const res4 = document.getElementById('response_4');
+    const total = document.getElementById('response_total');
+    total.style.backgroundColor = 'white';
+    total.style.color = 'black';
+
     coin1.value = '';
     coin2.value = '';
     coin3.value = '';
@@ -21,11 +29,17 @@ const init = function() {
     multi2.value = '';
     multi3.value = '';
     multi4.value = '';
+    res1.innerHTML = 0;
+    res2.innerHTML = 0;
+    res3.innerHTML = 0;
+    res4.innerHTML = 0;
+    total.innerHTML = 0;
 
 
 
 
-    btnCalcular.addEventListener('click', () => {
+    btnCalcular.addEventListener('click', (e) => {
+
 
 
         const coin1 = document.getElementById('coin_1').value;
@@ -43,6 +57,10 @@ const init = function() {
         const res3 = document.getElementById('response_3');
         const res4 = document.getElementById('response_4');
         const total = document.getElementById('response_total');
+
+        total.style.backgroundColor = 'darkgrey';
+        total.style.color = 'white';
+        total.style.fontSize = '23px';
 
         let arrayA = [coin1, coin2, coin3, coin4];
         let arrayB = [multi1, multi2, multi3, multi4];
