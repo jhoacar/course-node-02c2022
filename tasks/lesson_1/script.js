@@ -1,4 +1,4 @@
-const init = function() {
+const init = function () {
 
     const btnCalcular = document.getElementById('calcular');
     const btnNew = document.getElementById('new');
