@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "moongose": "^1.0.0",
+    "node-fetch": "^2.6.7",
+    "nodemon": "^2.0.19"
+  }
+}
