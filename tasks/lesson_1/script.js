@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 const init = function () {
+=======
+const MAX_NUMBER_BOXES = 4
+const COIN_ID = "coin_"
+const MULTIPLIER_ID = "multiplier_"
+const RESPONSE_ID = "response_"
+const TOTAL_ID = "response_total"
+const BUTTON_ID = "calculate"
+>>>>>>> aafbea1b277a6f4bde7044ab3b05c85455a132b9
 
     const btnCalcular = document.getElementById('calcular');
     const btnNew = document.getElementById('new');
@@ -8,6 +17,7 @@ const init = function () {
     const coin3 = document.getElementById('coin_3');
     const coin4 = document.getElementById('coin_4');
 
+<<<<<<< HEAD
     const multi1 = document.getElementById('multiplier_1');
     const multi2 = document.getElementById('multiplier_2');
     const multi3 = document.getElementById('multiplier_3');
@@ -36,21 +46,57 @@ const init = function () {
     total.innerHTML = 0;
 
 
+=======
+    for (let number = 1; number <= MAX_NUMBER_BOXES; number++) {
+
+        /**
+         * Template String
+         * "" , ''
+         * `ejemplo de codigo: ${variable}`
+         * "ejemplo de codigo: " + variable
+         */
+        const coin = document.getElementById(`${COIN_ID}${number}`)
+        const multiplier = document.getElementById(`${MULTIPLIER_ID}${number}`)
+
+        /**
+         * parseInt("18") == 18
+         * parseInt("hola") == NaN (Not A Number)
+         */
+        coin && !isNaN(parseInt(coin.value)) && coins.push(coin.value)
+        multiplier && !isNaN(parseInt(multiplier.value)) && multipliers.push(multiplier.value)
+    }
+>>>>>>> aafbea1b277a6f4bde7044ab3b05c85455a132b9
 
 
     btnCalcular.addEventListener('click', (e) => {
 
 
+<<<<<<< HEAD
+=======
+    /**
+     * Como dato curioso si es una sola linea de codigo,
+     * no sera necesaria la apertura y cierre de llaves
+     * 
+     * for(let index=0;index<algo;index++)
+     *  console.log(index)
+     */
+    if (coins.length !== multipliers.length)
+        return alert("La cantidad de monedas debe ser igual a la cantidad de multiplicadores")
+>>>>>>> aafbea1b277a6f4bde7044ab3b05c85455a132b9
 
         const coin1 = document.getElementById('coin_1').value;
         const coin2 = document.getElementById('coin_2').value;
         const coin3 = document.getElementById('coin_3').value;
         const coin4 = document.getElementById('coin_4').value;
 
+<<<<<<< HEAD
         const multi1 = document.getElementById('multiplier_1').value;
         const multi2 = document.getElementById('multiplier_2').value;
         const multi3 = document.getElementById('multiplier_3').value;
         const multi4 = document.getElementById('multiplier_4').value;
+=======
+    for (let number = 1; number <= MAX_NUMBER_BOXES; number++) {
+>>>>>>> aafbea1b277a6f4bde7044ab3b05c85455a132b9
 
         const res1 = document.getElementById('response_1');
         const res2 = document.getElementById('response_2');
